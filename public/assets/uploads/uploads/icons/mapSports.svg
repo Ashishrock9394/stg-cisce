@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="Group_3237" data-name="Group 3237" transform="translate(-137 -1749)">
+    <rect id="Rectangle_1632" data-name="Rectangle 1632" width="100" height="100" transform="translate(137 1749)" fill="rgba(255,255,255,0)"/>
+    <g id="Group_3235" data-name="Group 3235" transform="translate(0 -1.057)">
+      <g id="Group_3233" data-name="Group 3233" transform="translate(166 1777)">
+        <g id="Ellipse_150" data-name="Ellipse 150" transform="translate(5 9.057)" fill="#fff" stroke="#292775" stroke-width="2">
+          <circle cx="14.5" cy="14.5" r="14.5" stroke="none"/>
+          <circle cx="14.5" cy="14.5" r="13.5" fill="none"/>
+        </g>
+        <g id="Ellipse_151" data-name="Ellipse 151" transform="translate(33 0.057)" fill="rgba(255,255,255,0)" stroke="#292775" stroke-width="2">
+          <circle cx="5" cy="5" r="5" stroke="none"/>
+          <circle cx="5" cy="5" r="4" fill="none"/>
+        </g>
+        <g id="Ellipse_152" data-name="Ellipse 152" transform="translate(32 34.057)" fill="#292775" stroke="#292775" stroke-width="2">
+          <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+          <circle cx="5.5" cy="5.5" r="4.5" fill="none"/>
+        </g>
+        <g id="Ellipse_153" data-name="Ellipse 153" transform="translate(0 36.057)" fill="#fff" stroke="#292775" stroke-width="2">
+          <circle cx="3" cy="3" r="3" stroke="none"/>
+          <circle cx="3" cy="3" r="2" fill="none"/>
+        </g>
+        <g id="Ellipse_154" data-name="Ellipse 154" transform="translate(0 4.057)" fill="#ff8000" stroke="#292775" stroke-width="2">
+          <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+          <circle cx="3.5" cy="3.5" r="2.5" fill="none"/>
+        </g>
+        <line id="Line_139" data-name="Line 139" x2="5.236" y2="4.785" transform="translate(5.516 10.063)" fill="none" stroke="#292775" stroke-width="2"/>
+        <line id="Line_140" data-name="Line 140" y1="5.841" x2="6.49" transform="translate(4.263 32.402)" fill="none" stroke="#292775" stroke-width="2"/>
+        <line id="Line_141" data-name="Line 141" x1="5.841" y1="5.192" transform="translate(28.879 31.479)" fill="none" stroke="#292775" stroke-width="2"/>
+        <line id="Line_142" data-name="Line 142" x1="7.139" y2="7.139" transform="translate(28.23 7.468)" fill="none" stroke="#292775" stroke-width="2"/>
+      </g>
+      <g id="Group_3231" data-name="Group 3231" transform="translate(176.24 1791.336)">
+        <ellipse id="Ellipse_18" data-name="Ellipse 18" cx="8.566" cy="8.557" rx="8.566" ry="8.557" transform="translate(0.649 0.669)" fill="#fff"/>
+        <path id="Path_5753" data-name="Path 5753" d="M19.216,15.757a9.2,9.2,0,0,0,1.211-4.551,9.408,9.408,0,0,0-.112-1.42,9.211,9.211,0,0,0-7.9-7.7h-.039A9.025,9.025,0,0,0,11.213,2H11.1a9.3,9.3,0,0,0-5.68,2.045A9.2,9.2,0,0,0,3.229,15.809a.658.658,0,0,0,.059.092,9.252,9.252,0,0,0,4.541,3.88l.118.039A9.172,9.172,0,0,0,19.2,15.809ZM17.2,12.265a.658.658,0,0,0-.1-.092,6.856,6.856,0,0,0-5.654-1.683,5.369,5.369,0,0,1-1.158-4.024,10.876,10.876,0,0,1,3.376.388,11.5,11.5,0,0,1,5.371,3.327,8.068,8.068,0,0,1,.072,1.026,7.885,7.885,0,0,1-.494,2.749A7.511,7.511,0,0,0,17.2,12.265Zm-9.741,2.15A11.341,11.341,0,0,1,6.4,4.953,7.9,7.9,0,0,1,9.9,3.427a7.512,7.512,0,0,0-.79,2.183.657.657,0,0,0,0,.092,6.828,6.828,0,0,0,1.382,5.655,5.388,5.388,0,0,1-3.021,3.058ZM12.22,3.381a7.9,7.9,0,0,1,6.075,4.347A12.687,12.687,0,0,0,14.023,5.59a12.193,12.193,0,0,0-3.469-.454,6.061,6.061,0,0,1,.968-1.822,3.614,3.614,0,0,1,.658.039ZM4.631,6.866a12.564,12.564,0,0,0,1.547,7.95,6.08,6.08,0,0,1-1.975.059,7.846,7.846,0,0,1,.428-8.009Zm.507,9.377a7.529,7.529,0,0,0,2.2-.381A.658.658,0,0,0,7.5,15.8a6.842,6.842,0,0,0,4.225-4.024,5.394,5.394,0,0,1,4.14,1.072,10.844,10.844,0,0,1-1.975,2.63A11.5,11.5,0,0,1,8.165,18.5a7.937,7.937,0,0,1-3.034-2.262Zm12.229-.079A7.9,7.9,0,0,1,11.213,19.1h-.48a12.684,12.684,0,0,0,4.081-2.663A12.173,12.173,0,0,0,16.86,13.8a6.056,6.056,0,0,1,1.027,1.657,8.029,8.029,0,0,1-.527.7Z" transform="translate(-1.995 -2)" fill="#ff8000"/>
+      </g>
+    </g>
+  </g>
+</svg>

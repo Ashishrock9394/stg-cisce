@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="112" viewBox="0 0 112 112">
+  <defs>
+    <filter id="Rectangle_888" x="0" y="0" width="112" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#616074" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2829" data-name="Group 2829" transform="translate(-132 -86)">
+    <g transform="matrix(1, 0, 0, 1, 132, 86)" filter="url(#Rectangle_888)">
+      <rect id="Rectangle_888-2" data-name="Rectangle 888" width="100" height="100" transform="translate(6 4)" fill="#fff" opacity="0"/>
+    </g>
+    <g id="Group_2825" data-name="Group 2825">
+      <path id="Path_5728" data-name="Path 5728" d="M37.814,81.653,33.321,94.844a3.23,3.23,0,0,1-6.2-1.765l.57-2.481h0L30.7,77.488a.67.67,0,1,1,1.306.3l-2.82,12.275h4.349l3.012-8.843a.67.67,0,1,1,1.268.432ZM33.077,91.4h-4.2l-.454,1.976a1.89,1.89,0,0,0,3.63,1.033Zm29.67,4.959a.67.67,0,0,1-.67.67H46.893a3.228,3.228,0,0,1-3.016-2.188L37.2,75.99l-.323-1.34L34.829,62.861a.67.67,0,0,1,.66-.785h3.293a5.22,5.22,0,0,1,5.112,4.07l6.189,26.933h0a3.223,3.223,0,0,1-.528,2.613H62.077A.67.67,0,0,1,62.747,96.362ZM36.285,63.416l2.043,11.733,5.278,14.914h4.407L42.587,66.446a3.887,3.887,0,0,0-3.806-3.031ZM46.9,95.692h.016a1.891,1.891,0,0,0,1.858-2.313L48.321,91.4H44.081l1.062,3A1.893,1.893,0,0,0,46.9,95.692Z" transform="translate(155 70.967)" fill="#ff8000" stroke="#ff8000" stroke-width="0.5"/>
+      <path id="Path_5728-2" data-name="Path 5728" d="M25.193,75.99V93.916a3.121,3.121,0,0,1-3.117,3.117H5.5a.67.67,0,1,1,0-1.34H19.517a3.1,3.1,0,0,1-.558-1.777V73.31a7.517,7.517,0,1,1,0-8.555V44.15a3.117,3.117,0,0,1,6.234,0V62.076H33.2a.67.67,0,0,1,0,1.34H20.3V74.65h4.224A6.9,6.9,0,0,1,25.193,75.99Zm-8.04-11.318a6.167,6.167,0,1,0,0,8.722A6.148,6.148,0,0,0,17.153,64.672Zm3.146-2.6h3.554V44.15a1.777,1.777,0,0,0-3.554,0V62.076ZM23.853,75.99H20.3V93.916a1.777,1.777,0,1,0,3.554,0V75.99Z" transform="translate(155 70.967)" fill="#292775" stroke="#292775" stroke-width="0.5"/>
+      <path id="Path_5733" data-name="Path 5733" d="M2015.141,145.594v1.344h10.094v-1.344Z" transform="translate(-1835.703)" fill="#292775" stroke="#292775" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

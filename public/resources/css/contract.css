@@ -1,0 +1,55 @@
+body{
+    background: #000!important;
+    color:#fffd43;;
+}
+
+body * a {
+    color: #fffd43;;
+}
+.contr-bx {
+      background: #000;
+}
+
+.log_reg a {
+    color:#fffd43;}
+
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav  {
+        color:#fffd43;}
+        .nav-item .nav-link {
+            color: #fffd43;
+        }
+
+
+        .menu-bar .navbar a {
+          
+            color: #fffd43;
+        }
+        .nav-item a{color: #fffd43!important;}
+
+
+        .footer_link {
+            background-color: #fffd43;
+            /* border-bottom: 1px solid #e1e1e1; */
+        }
+
+        .footer_link li a {
+          
+            color: black;
+        }
+        .footer_link li:last-child {            
+            background: #fff;
+        }
+
+        .top_head_item a {
+            background-color: #fffd43;
+            color:#000;
+        }
+
+        .contra sup{color:#fffd43;}
+        .contra sub{color:#fffd43;}
+
+        img {
+            filter: gray!important; /* IE6-9 */
+            -webkit-filter: grayscale(1)!important; /* Google Chrome, Safari 6+ & Opera 15+ */
+            filter: grayscale(1)!important;; /* Microsoft Edge and Firefox 35+ */
+          }

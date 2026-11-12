@@ -1,0 +1,107 @@
+body{
+    background: #fff;;
+    padding:0;
+    margin:0;                       
+    line-height: 1.5;;
+}
+p{
+    line-height: 1.5;;
+}
+header, nav, footer,ul{
+    display: none;
+
+}
+
+h1 {
+    font-size: 24pt;
+    }
+    
+    h2 {
+    font-size: 14pt;
+    margin-top: 25px;
+    }
+    
+    aside h2 {
+    font-size: 18pt;
+    }
+    blockquote, ul {
+        margin: 0;
+        }
+
+        
+ul {list-style: none}
+
+li {
+    content: "» ";
+    }
+#top-header, .header, nav{display: none;}
+.container-fluid, .banner{width:100%;}
+
+
+aside#sidebar,header[role="banner"],footer,#comments,#respond {
+    display: none;
+}
+#container #content #main {
+    width: 90%;
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    color: #000;    
+    background-color: #fff;
+    box-shadow:none;
+    text-shadow:none;
+   
+}
+/* a:after {
+    content: "( "attr(href)" )";
+} */
+
+.parent_div {
+    column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 0;
+    -webkit-column-gap: 0;
+}
+.container{width:100%;}
+.fitter_area_inner{width:100%;}
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+.shadow {
+    box-shadow: 0 0rem 0rem rgba(0,0,0,0)!important;
+}
+.shar_div{text-align: left;margin:0 auto;}
+.img_radius_lr {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+   } 
+   #VideoId {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+
+.on-print{
+    display: none;
+}
+#videoId_1{display: none;;}
+video{width: 100%;height: 100%;;}
+#videoId1{display: none;}
+
+#videoId{display: none;}
+
+#fit-india-champions .amb_area{display:inline-block}
+section{padding:10pt;}
+.amb_area {
+    background: #eee;
+    margin-right: 1%;
+    width: 30%;
+}
+.carousel-item{margin-bottom:10pt;}
+

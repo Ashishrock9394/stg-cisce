@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="112" viewBox="0 0 112 112">
+  <defs>
+    <filter id="Rectangle_888" x="0" y="0" width="112" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#616074" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2835" data-name="Group 2835" transform="translate(-131 -402)">
+    <g transform="matrix(1, 0, 0, 1, 131, 402)" filter="url(#Rectangle_888)">
+      <rect id="Rectangle_888-2" data-name="Rectangle 888" width="100" height="100" transform="translate(6 4)" fill="#fff" opacity="0"/>
+    </g>
+    <g id="Group_2824" data-name="Group 2824">
+      <rect id="Rectangle_1519" data-name="Rectangle 1519" width="9" height="4" transform="translate(182 433)" fill="#ff8000"/>
+      <g id="_7066a6bcc285c3b99bfa14ff7ce28cf1" data-name="7066a6bcc285c3b99bfa14ff7ce28cf1" transform="translate(160.23 429.5)">
+        <path id="Path_5731" data-name="Path 5731" d="M29.19,11.17V8.86h2.35a1,1,0,0,0,1-1V3.5a1,1,0,0,0-1-1H21.26a1,1,0,0,0-1,1V7.86a1,1,0,0,0,1,1h2.55v2.31a19.71,19.71,0,0,0-9.29,3.88L12,12.54a1,1,0,0,0-1.42,0L8.24,14.9a1,1,0,0,0,0,1.42l2.52,2.51a19.774,19.774,0,1,0,31.51.05l2.55-2.56a1,1,0,0,0,0-1.42l-2.36-2.36a1,1,0,0,0-1.41,0l-2.54,2.54a19.66,19.66,0,0,0-9.32-3.91ZM22.26,4.5h8.28V6.86H22.26ZM25.81,11V8.86h1.38V11ZM10.36,15.61l1-.95L13,16.34a9.983,9.983,0,0,0-.94,1ZM26.5,48.5a17.75,17.75,0,0,1-13.76-29h.07a.75.75,0,0,0,.09-.15,17.36,17.36,0,0,1,2.1-2.1,1.63,1.63,0,0,0,.17-.11.53.53,0,0,0,.06-.1A17.76,17.76,0,1,1,26.5,48.5ZM41.77,14.66l.94.95L41,17.33c-.3-.32-.62-.64-.94-.95Z" fill="#292775" stroke="#292775" stroke-width="0.25"/>
+        <path id="Path_5732" data-name="Path 5732" d="M26.5,17.86a1,1,0,0,0,1-1V15a1,1,0,0,0-2,0v1.85a1,1,0,0,0,1,1.01Zm0,25.74a1,1,0,0,0-1,1v1.86a1,1,0,0,0,2,0V44.6A1,1,0,0,0,26.5,43.6ZM40.37,31.73h1.85a1,1,0,0,0,0-2H40.37a1,1,0,0,0,0,2Zm-27.74-2H10.78a1,1,0,1,0,0,2h1.85a1,1,0,0,0,0-2ZM36.91,18.91,35.6,20.22a1,1,0,0,0,1.41,1.41l1.32-1.31a1,1,0,1,0-1.42-1.41ZM16,39.83l-1.32,1.32a1,1,0,0,0,1.42,1.41l1.31-1.31A1,1,0,1,0,16,39.83Zm21,0a1,1,0,1,0-1.41,1.42l1.31,1.31a1,1,0,0,0,1.42-1.41ZM16.09,18.91a1,1,0,0,0-1.42,1.41L16,21.63a1,1,0,1,0,1.41-1.41ZM27.4,27.55V20.93a1,1,0,0,0-2,0v6.68a3.33,3.33,0,1,0,2-.06Zm-.9,4.51a1.33,1.33,0,1,1,1.33-1.33,1.33,1.33,0,0,1-1.33,1.33Z" fill="#ff8000"/>
+      </g>
+      <circle id="Ellipse_16" data-name="Ellipse 16" cx="2.5" cy="2.5" r="2.5" transform="translate(184 458)" fill="#ff8000"/>
+    </g>
+  </g>
+</svg>

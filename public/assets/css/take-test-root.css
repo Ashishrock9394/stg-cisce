@@ -1,0 +1,17 @@
+:root {
+  --primary: #FF8000;
+  --navi-blue: #292775;
+  --white: #fff;
+  --black:#000;
+  --font-family: "Inter", serif;
+  --transition: 0.5s;
+  --shadow:0 0.05rem 0.35rem rgb(231 231 235/80%);
+  --bg-background:rgb(231 231 235/40%);
+  --light-gray:rgb(196 196 202 / 40%);
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1rem;
+  --h4: 0.75rem;
+  --h5: 0.5rem;
+  --h6: 0.35rem;
+}/*# sourceMappingURL=root.css.map */

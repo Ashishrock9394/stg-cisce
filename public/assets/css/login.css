@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Resetting default styling and setting font-family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10px;
+  display: flex;
+  /* background: #626cd6; */
+  justify-content: center;
+  align-items: top;
+}
+.__main {
+  width: 100%;
+  max-width: 400px;
+}
+/* Login form styling */
+body.login {
+   background-color: #fff !important;
+}
+.login_form {
+  width: 100%;
+  max-width: 100%;
+  background: transparent;
+  border-radius: 0;
+  padding: 30px 30px 0 30px;
+  box-shadow: none;
+}
+
+.login_form h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Google & Apple button styling */
+.login_form .login_option {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.login_form .login_option .option {
+  width: calc(100% / 2 - 12px);
+}
+
+.login_form .login_option .option a {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #f8f8fb;
+  border: 1px solid #dadaf2;
+  border-radius: 8px;
+  margin: 15px 0 0 0;
+  text-decoration: none;
+  color: #171645;
+  font-weight: 500;
+  transition: 0.2s ease;
+  background-color: #fff;
+}
+
+.login_form .login_option .option a:hover {
+  background: #ededf5;
+  border-color: #626cd6;
+}
+
+.login_form .login_option .option a img {
+  max-width: 25px;
+  display: none;
+}
+
+.option.active a {
+  border-color: #312f7a !important;
+  background: #312f7a !important;
+  color: #fff !important;
+}
+
+.login_form p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.login_form .separator {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+/* Login option separator styling */
+.login_form .separator span {
+  background: #fff;
+  z-index: 1;
+  padding: 0 10px;
+  position: relative;
+}
+
+.login_form .separator::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 0;
+  height: 1px;
+  background: #c2c2c2;
+  display: block;
+}
+
+form .input_box label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+/* Input field styling */
+form .input_box input {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #dadaf2;
+  border-radius: 5px;
+  outline: none;
+  background: #f8f8fb;
+  font-size: 14px;
+  /*padding: 0px 15px;*/
+  margin-bottom: 15px;
+  transition: 0.2s ease;
+}
+
+form .input_box input:focus {
+  border-color: #626cd6;
+}
+
+form .input_box .password_title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+form .input_box {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #626cd6;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Login button styling */
+form button {
+  width: 100%;
+  height: 56px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #626cd6;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 28px;
+  transition: 0.3s ease;
+}
+
+.brandlog {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.brandlog img {
+  height: 94px;
+}
+
+form button:hover {
+  background: #4954d0;
+}
+.captcha-row {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.captcha-row > div {
+  width: 100% !important;
+}
+.captcha > img {
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.captcha > input[type="checkbox"] {
+  position: absolute;
+  top: 22px;
+  left: 40px;
+  width: 28px;
+  height: 28px;
+}
+
+p.error_message {
+  color: red;
+  /*       background-color: bisque;*/
+  margin-top: 4px;
+  padding: 3px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.captcha {
+  position: relative;
+  margin-top: -7px;
+}
+
+.nvsloginform {
+  font-weight: 600;
+}
+
+#top-admin-nav {
+  padding: 0px 10px;
+}
+#top-admin-nav .nav-link,
+#top-admin-nav .navbar-nav .nav-link:hover {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 10px;
+}
+.avtar > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333 !important;
+  gap: 10px;
+}
+
+/********************/
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .login_form {
+    max-width: inherit;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+  }
+
+  .login_form .login_option .option a img {
+    display: block;
+  }
+  .brandlog {
+    margin-bottom: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

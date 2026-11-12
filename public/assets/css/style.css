@@ -1,0 +1,107 @@
+.warn {
+    font-size: large;
+    color: red;
+}
+ 
+.responsive-tbl {
+    overflow-x: auto;
+    margin: 30px 0px 0 0px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grand-total {
+    font-size: inherit;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+.dt-container {
+    background-color: transparent;
+    color: #2c2d78;
+}
+.dt-container :is(.top) {
+    margin-bottom: 15px;
+    padding: 0px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+.filter-right {
+    margin-bottom: 15px;
+}
+.dt-container .top select, .dt-container .top .pull-right select, .dt-search input[type=search],.btn.exportButton {
+    border:1px solid rgb(0 0 0/20%);    
+}
+
+.responsive-tbl {
+    padding-top: 50px;
+    margin: 0;
+}
+.limit-text-colm {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.costsummarytable_action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-controlar {
+    display:flex; gap:10px; margin-top: 15px;
+}
+.filter-controlar > div {
+    width: 100%;
+}
+.dropdown-menu a:hover {
+    color: var(--white-color) !important;
+    cursor: pointer;
+}
+
+
+.costsummarytbl td {
+    background-color: #ffffff;
+    color: #414385;
+}
+
+#exportcostsummary.btn-primary:disabled {
+    background-color: #FF8000;
+    border: none;
+    box-shadow: inset 0 -3px 0 #e67400;
+}
+td.text-left {
+    background-color: #ffffff;
+    color: #414385;
+    font-weight: 500;
+}
+
+
+
+
+/***************************/
+
+/******** Small devices (landscape phones, 576px and up) ***********/
+@media (min-width: 576px) { 
+    .filter-controlar > div {
+        width: 50%;
+    }
+ }
+
+/********  Medium devices (tablets, 768px and up) ***********/
+@media (min-width: 768px) { 
+    .filter-controlar {
+        margin-top: 0px;
+    }
+    .filter-controlar > div {
+        width: 50%;
+    }
+ }
+
+/********  Large devices (desktops, 992px and up) ***********/
+@media (min-width: 992px) {  }
+
+/******** Extra large devices (large desktops, 1200px and up) ***********/
+@media (min-width: 1200px) {  }
