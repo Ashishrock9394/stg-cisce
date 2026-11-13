@@ -67,6 +67,12 @@
         margin: 0;
         overflow: hidden;
     }
+    .box,
+    .box:hover,
+    .box:focus,
+    .box:visited {
+        text-decoration: none;
+    }
 
     .container-fluid {
         height: 100vh;

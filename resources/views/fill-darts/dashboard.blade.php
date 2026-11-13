@@ -38,6 +38,13 @@
 .marquee-container:hover .marquee {
     animation-play-state: paused;
 }
+
+.box,
+.box:hover,
+.box:focus,
+.box:visited {
+    text-decoration: none;
+}
 </style>
 
 @if(Auth::user()->role_id == '4')
