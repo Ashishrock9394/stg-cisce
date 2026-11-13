@@ -3,11 +3,9 @@
     <div class="independence-page">
 
         <button type="button"
-                class="fitness-idp-close"
+                class="fitness-idp-close btn-close"
                 onclick="closeIndependencePopup()"
-                aria-label="Close">
-            <i class="fas fa-times"></i>
-        </button>
+                aria-label="Close"></button>
 
         <!-- TOP TRICOLOR -->
         <div class="tricolor-line"></div>

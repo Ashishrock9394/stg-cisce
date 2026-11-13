@@ -40,7 +40,7 @@
                     <div class="mb-3" style="margin-top:32px;">
                        <a href="{{ route('scan') }}"
                             class="btn btn-outline-secondary px-3 ml-0 d-flex justify-content-center align-items-center border-btn"
-                            style="gap: 5px" data-toggle="modal" data-target=".bd-scan-modal-lg"><span
+                            style="gap: 5px" data-bs-toggle="modal" data-bs-target=".bd-scan-modal-lg"><span
                                 class="d-flex"><i class="bi bi-qr-code"></i></span>
                             <span>Scan</span>
                         </a>
@@ -88,9 +88,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left:20px; z-index:5; background:#fff;">
-                <span aria-hidden="true">&times;</span>
-            </button>
+            <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close" style="left:20px; z-index:5; background:#fff;"></button>
             <div id="my-qr-reader" style="position: relative; padding: 0px; border: 1px solid silver;">                
             </div>
         </div>

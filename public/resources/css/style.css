@@ -771,6 +771,50 @@ nav[aria-label="breadcrumb"] .breadcrumb {
   left: -15px;
 }
 
+.back-button > span.arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 36px;
+  height: 36px;
+  margin: 0 14px 0 0;
+  padding: 0;
+  border: 2px solid var(--org-color, #ff8000);
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--org-color, #ff8000);
+}
+
+.back-button + .heading-rw {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.back-button + .heading-rw h1 {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.back-button > span.arrow svg {
+  display: block;
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  color: inherit;
+  fill: currentColor;
+}
+
 .concepts-area .heading-rw {
   display: flex;
   margin-bottom: 15px;

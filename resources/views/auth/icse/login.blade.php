@@ -122,9 +122,6 @@
 @endsection
 
 @push('icse-footer-script')
-<script src="{{ asset('resources/js/jquery.min.js') }}"></script>
-
-
 <script>
 $(document).ready(function () {
 

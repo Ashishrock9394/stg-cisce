@@ -17,37 +17,29 @@
 </footer>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-<!-- DataTable CSS -->
-<script src="{{ asset('assets/DataTables/datatables.js') }}"></script>
-<script src="{{ asset('assets/DataTables/datatables.min.js') }}"></script>
-
-<!-- DataTables Buttons JS -->    
-<script src="https://cdn.datatables.net/select/2.0.3/js/dataTables.select.js"></script>
-<script src="https://cdn.datatables.net/select/2.0.3/js/select.bootstrap4.js"></script>
-<script src="https://cdn.datatables.net/datetime/1.5.3/js/dataTables.dateTime.min.js"></script>
-<script src="https://cdn.datatables.net/colreorder/2.0.3/js/dataTables.colReorder.js"></script>
-<script src="https://cdn.datatables.net/colreorder/2.0.3/js/colReorder.bootstrap4.js"></script>
-<script src="https://cdn.datatables.net/buttons/3.1.0/js/dataTables.buttons.js"></script>
-<script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.bootstrap4.js"></script>
-
-
-
-
-<!-- JSZip for Excel export -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-<script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.print.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js" defer></script>
-
-
 {{-- @stack('scripts') --}}
 
+<script>
+    document.addEventListener('change', function (event) {
+        const input = event.target;
+        if (!(input instanceof HTMLInputElement) || !input.matches('[data-toggle="buttons"] input[type="checkbox"], [data-toggle="buttons"] input[type="radio"]')) {
+            return;
+        }
 
+        const group = input.closest('[data-toggle="buttons"]');
+        if (!group) {
+            return;
+        }
+
+        if (input.type === 'radio' && input.checked) {
+            group.querySelectorAll('input[type="radio"][name="' + CSS.escape(input.name) + '"]').forEach(function (radio) {
+                radio.closest('.btn')?.classList.toggle('active', radio.checked);
+            });
+        } else {
+            input.closest('.btn')?.classList.toggle('active', input.checked);
+        }
+    });
+</script>
 
 <script>
 

@@ -4,8 +4,8 @@
             
             <!-- Item 1 (Expanded by default) -->
             <h4 class="test-cat d-flex justify-content-between" 
-                data-toggle="collapse" 
-                data-target="#juniorDataList" 
+                data-bs-toggle="collapse"
+                data-bs-target="#juniorDataList"
                 role="button" 
                 aria-expanded="true" 
                 aria-controls="juniorDataList" 
@@ -34,8 +34,8 @@
 
             <!-- Item 2 -->
             <h4 class="test-cat d-flex justify-content-between" 
-                data-toggle="collapse" 
-                data-target="#juniorDataList1" 
+                data-bs-toggle="collapse"
+                data-bs-target="#juniorDataList1"
                 role="button" 
                 aria-expanded="false" 
                 aria-controls="juniorDataList1" 
@@ -63,8 +63,8 @@
 
             <!-- Item 3 -->
             <h4 class="test-cat d-flex justify-content-between" 
-                data-toggle="collapse" 
-                data-target="#seniorDataList" 
+                data-bs-toggle="collapse"
+                data-bs-target="#seniorDataList"
                 role="button" 
                 aria-expanded="false" 
                 aria-controls="seniorDataList" 
@@ -99,8 +99,8 @@
 
             <!-- Item 4 -->
             <h4 class="test-cat d-flex justify-content-between" 
-                data-toggle="collapse" 
-                data-target="#cwsnDataList" 
+                data-bs-toggle="collapse"
+                data-bs-target="#cwsnDataList"
                 role="button" 
                 aria-expanded="false" 
                 aria-controls="cwsnDataList" 

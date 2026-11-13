@@ -89,14 +89,14 @@ function _staticModal(txt){
     // html += '<div class="modal-dialog">';
     // html += '<div class="modal-content">';
     // html += '<div class="modal-header">';
-    // html += '<a class="close" data-dismiss="modal">×</a>';
+    // html += '<a class="close" data-bs-dismiss="modal">×</a>';
     // html += '<h4>'+$staticPaginationList[txt].title +'</h4>'
     // html += '</div>';
     // html += '<div class="modal-body">';
     // html += $staticPaginationList[txt].content ;
     // html += '</div>';
     // html += '<div class="modal-footer">';
-    // html += '<span class="btn btn-primary" data-dismiss="modal">Close</span>';
+    // html += '<span class="btn btn-primary" data-bs-dismiss="modal">Close</span>';
     // html += '</div>';  
     // html += '</div>';  
     // html += '</div>';  
@@ -127,7 +127,7 @@ function _staticModal(txt){
 //         '<div class="modal-content">' +
 //         '<div class="modal-header">' +
 //         '<h5 class="modal-title"></h5>' +
-//         '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
+//         '<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">' +
 //         '<span aria-hidden="true">&times;</span>' +
 //         '</button>' +
 //         '</div>' +
@@ -188,7 +188,7 @@ function _staticPagination(page) {
             try {
                 // list 추가, example 확인 (list append, Please refer to example for this)
                 $list.append('' +
-                    '<li class="div_area1" onclick="_staticModal('+i + '); " data-toggle="modal" data-target="#myModal">' +                    
+                    '<li class="div_area1" onclick="_staticModal('+i + '); " data-bs-toggle="modal" data-bs-target="#myModal">' +
                     '<img src=' + $staticPaginationList[i].url + ' ' + 'class="img-fluid">' +
                     '<p>' + $staticPaginationList[i].title + '</p>' +
                    '</li>');

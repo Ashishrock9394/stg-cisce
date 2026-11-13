@@ -32,7 +32,7 @@
                             @foreach($chapters_details as $key => $details)
                                 @if( $key === $topic_details->chapter)                                    
                                     <li class="active">
-                                        <a href="#{{ $key }}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                                        <a href="#{{ $key }}" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
                                             <span class="chptr-nm">{{ $key }}</span> <p>{{ $details['chapter_name'] }}</p>
                                         </a>
 
@@ -48,7 +48,7 @@
                                     </li>
                                 @else
                                     <li>
-                                        <a href="#{{ $key }}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                        <a href="#{{ $key }}" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                                             <span class="chptr-nm">{{ $key }}</span>
                                             <p>{{ $details['chapter_name'] }}</p>
                                         </a>

@@ -392,13 +392,13 @@
         
         <div class="form-row download-report mb-5">
             <div class="col-12 col-sm-4 col-lg-4 mb-3">
-                {{-- <a href="#" class="btn btn-primary btn-lg w-100" data-toggle="tooltip" data-placement="top" title="End of the term"> --}}
+                {{-- <a href="#" class="btn btn-primary btn-lg w-100" data-bs-toggle="tooltip" data-placement="top" title="End of the term"> --}}
                 <a href="{{$view_link}}" class="btn btn-primary btn-lg w-100" target="_blank">
                     View Report 
                 </a>
             </div>
             <div class="col-12 col-sm-4 col-lg-4 mb-3">
-                {{-- <a href="#" class="btn btn-primary btn-lg w-100" data-toggle="tooltip" data-placement="top" title="End of the term"> --}}
+                {{-- <a href="#" class="btn btn-primary btn-lg w-100" data-bs-toggle="tooltip" data-placement="top" title="End of the term"> --}}
                 <a href="{{$download_link}}" class="btn btn-primary btn-lg w-100" target="_blank">
                     Download Report 
                 </a>

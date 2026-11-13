@@ -96,7 +96,7 @@
 
                                                         <i class="bi bi-info-circle stop-propagation custom-tooltip-trigger" 
                                                            style="font-size: 14px; cursor: pointer; display: inline-block;"
-                                                           data-toggle="tooltip" 
+                                                           data-bs-toggle="tooltip"
                                                            data-trigger="click hover focus"
                                                            data-boundary="window" 
                                                            data-html="true"  
@@ -119,8 +119,8 @@
                                                         <button
                                                             type="button"
                                                             class="play cwsn-video-btn"
-                                                            data-toggle="modal"
-                                                            data-target="#playModal"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#playModal"
                                                             data-testtypeid="{{ $val->TestTypeID }}"
                                                             data-testname="{{ trim($val->TestTypeName) }}"
                                                             aria-label="Play {{ trim($val->TestTypeName) }} video"
@@ -150,9 +150,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5  class="modal-title"   id="playModalLabel" >  Video </h5>
-                <button  type="button"  class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button  type="button"  class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body"> <p class="text-muted mb-0"> Select a video to play. </p> </div>
         </div>
@@ -163,7 +161,7 @@
 <script>
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-bs-toggle="tooltip"]').tooltip()
 })
 
 $(function () {

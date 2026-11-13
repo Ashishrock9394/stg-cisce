@@ -146,7 +146,7 @@
             <h3 class="modal-title" id="model-title-id"></h3>
          </div>
 
-         <button type="button" class="close" data-dismiss="modal">×</button>
+         <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          <div id="modal-image-id"></div>
 
          <!-- Modal body -->

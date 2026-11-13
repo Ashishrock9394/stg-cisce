@@ -50,8 +50,8 @@
                                                 </a>
                                             @endif
                                         </div>
-                                        <a href="javascript:void(0);" class="play" data-toggle="modal" 
-                                            data-target="#playModal" data-testtypeid="{{ $val->TestTypeID }}" data-testname="{{ $val->TestPerformed }}"> <i class="bi bi-play-circle"></i> 
+                                        <a href="javascript:void(0);" class="play" data-bs-toggle="modal"
+                                            data-bs-target="#playModal" data-testtypeid="{{ $val->TestTypeID }}" data-testname="{{ $val->TestPerformed }}"> <i class="bi bi-play-circle"></i>
                                         </a>
                                     </li>
                                 @endforeach
@@ -72,9 +72,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Running</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <p class="text-muted">Loading video...</p>

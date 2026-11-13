@@ -16,7 +16,7 @@
     @if (session('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
             {{ session('success') }}
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button type="button" class="close btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     @endif
 
@@ -27,7 +27,7 @@
                     <li>{{ $error }}</li>
                 @endforeach
             </ul>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button type="button" class="close btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     @endif
 

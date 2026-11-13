@@ -7,6 +7,17 @@
 	    display: none !important;
 	}
 
+    #upload_test_data .badge {
+        background-color: #292775;
+        border-color: #292775 !important;
+        color: #fff;
+    }
+
+    .datatable-actions-outside > .all-chaptr-cards {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
     #upload_test_data {
         width: 100%;
         table-layout: auto;
@@ -68,11 +79,11 @@
             <div style="color: #ffffff;">
                 <div class="d-flex">
                     @if (!session('is_impersonating'))
-                    <a type="button" id="upload_btn" class="btn btn-primary text-light text-center custome-btn-i w-100 mr-2" data-toggle="modal" data-target="#uploadtestdata">
+                    <a type="button" id="upload_btn" class="btn btn-primary text-light text-center custome-btn-i w-100 mr-2" data-bs-toggle="modal" data-bs-target="#uploadtestdata">
                     <i class="fa-solid fa-upload"></i>Upload Data</a>
                     @endif
                     @if($logs->isNotEmpty())
-                    <a type="button" class="btn btn-primary custome-btn-i w-100" data-toggle="modal" data-target="#testHistoryModal">
+                    <a type="button" class="btn btn-primary custome-btn-i w-100" data-bs-toggle="modal" data-bs-target="#testHistoryModal">
                         View History
                     </a>
                     @endif

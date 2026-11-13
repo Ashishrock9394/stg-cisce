@@ -384,7 +384,7 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center">
-                    <a href="#a" data-toggle="modal" data-target=".bd-example-modal-lg"
+                    <a href="#a" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg"
                         class="btn btn-outline-secondary px-3 ml-0 d-flex justify-content-center align-items-center border-btn add-student-btn"
                         data-rank="${liCount}" style="gap: 5px">
                         <span>Add</span>

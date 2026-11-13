@@ -264,7 +264,7 @@ $(document).ready(function() {
         
             let $dropdown2 = $(`
                 <div class="dropdown" style="display:inline-block;">
-                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" id="test_count_label">
+                    <button class="form-control dropdown-toggle" type="button" data-bs-toggle="dropdown" id="test_count_label">
                         All Tests <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" style="padding:10px; max-height:300px; overflow:auto; min-width:260px;"></ul>

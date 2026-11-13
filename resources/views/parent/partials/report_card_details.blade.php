@@ -66,7 +66,7 @@
    </div>
 
 
-    <button class="btn btn-link collapsed mt-4 px-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Rubric Descriptions </button>
+    <button class="btn btn-link collapsed mt-4 px-0" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Rubric Descriptions </button>
 
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
          <div class="card-body p-0">

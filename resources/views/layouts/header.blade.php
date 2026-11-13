@@ -21,7 +21,7 @@
                      <img src="{{ asset('resources/images/cisce/cisce-logo-prt.png') }}" class="img-fluid goforfit-logo logo-mob d-md-block d-lg-none d-sm-block" alt="CISCE Logo" title="">
                   </a>
 
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                      <span class="navbar-toggler-icon"></span>
                   </button>
 

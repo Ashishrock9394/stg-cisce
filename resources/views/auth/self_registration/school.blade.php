@@ -101,7 +101,7 @@
 
 
                             <div class="form-group col-md-3">
-                                <label for="schoolCode" data-toggle="tooltip" title="U-DISE code stands for UNIFIED DISTRICT INFORMATION SYSTEM for EDUCATION"> School Code ( U-DISE Code ) <span class="text-danger">*</span>
+                                <label for="schoolCode" data-bs-toggle="tooltip" title="U-DISE code stands for UNIFIED DISTRICT INFORMATION SYSTEM for EDUCATION"> School Code ( U-DISE Code ) <span class="text-danger">*</span>
                                 </label>
                                 <input type="text" class="form-control @error('schoolCode') is-invalid @enderror" id="schoolCode"  name="schoolCode" value="{{ old('schoolCode') }}" placeholder="Enter U-DISE code">
 

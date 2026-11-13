@@ -209,7 +209,7 @@
       {{--
       <div class="mt-4">          
           @if($logs->isNotEmpty())             
-                 <a class="btn btn-link" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">View Upload History</a>
+                 <a class="btn btn-link" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">View Upload History</a>
              
                <div class="row mt-4">
                  <div class="col">

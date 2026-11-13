@@ -81,11 +81,11 @@
                 <div class="col-12 col-md-auto mt-4 mt-md-0">
                     <ul class="tabs nav nav-pills mb-0 justify-content-center" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a href="#junior" data-toggle="tab" aria-expanded="false"
+                            <a href="#junior" data-bs-toggle="tab" aria-expanded="false"
                                class="nav-link active">5-8 Years</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#senior" data-toggle="tab" aria-expanded="true"
+                            <a href="#senior" data-bs-toggle="tab" aria-expanded="true"
                                class="nav-link">9-18+ Years</a>
                         </li>
                     </ul>
@@ -115,8 +115,8 @@
                                                                     <div class="language mr-3 mb-2 d-flex align-items-center">
                                                                         <i class="fa fa-youtube-play mr-2" style="color:red; font-size: 20px;"></i>
                                                                         <a class="text-primary open-modal-btn"
-                                                                        data-toggle="modal"
-                                                                        data-target="#playModal2"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#playModal2"
                                                                         data-skill-id="{{ $video->skill_id }}"
                                                                         data-skill-name="{{ $video->skill_name }}"
                                                                         data-lang="{{ strtolower($video->type_video) }}"
@@ -166,8 +166,8 @@
                                                                     <div class="language mr-3 mb-2 d-flex align-items-center">
                                                                         <i class="fa fa-youtube-play mr-2" style="color:red; font-size: 20px;"></i>
                                                                         <a class="text-primary open-modal-btn"
-                                                                        data-toggle="modal"
-                                                                        data-target="#playModal2"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#playModal2"
                                                                         data-skill-id="{{ $video->skill_id }}"
                                                                         data-skill-name="{{ $video->skill_name }}"
                                                                         data-lang="{{ strtolower($video->type_video) }}"
@@ -210,9 +210,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Video</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p class="text-muted">Loading video...</p>

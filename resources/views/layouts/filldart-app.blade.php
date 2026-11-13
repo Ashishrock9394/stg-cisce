@@ -10,14 +10,22 @@
         <title>@yield('title')</title>
         <link rel="icon" href="{{ asset('resources/images/cisce/cisce-logo-prt.png') }}" sizes="192x192" />
         
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ asset('resources/css/bootstrap4-compat.css') }}">
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.1.2/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.0/css/buttons.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/2.0.3/css/select.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css">
 
         <link rel="stylesheet" href="{{ asset('resources/css/dashboard.min.css') }}" media="screen">
-        <link href="{{ asset('resources/css/style.css') }}" rel="stylesheet" media="all">
+        <link href="{{ asset('resources/css/style.css') }}?v={{ filemtime(public_path('resources/css/style.css')) }}" rel="stylesheet" media="all">
         <link rel="stylesheet" href="{{ asset('resources/css/custom-style.css') }}?v={{ time() }}">
 
         <link href="{{ asset('resources/css/print.css') }}" rel="stylesheet" media="print">
-        <script src="{{ asset('resources/js/jquery.min.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ asset('resources/js/bootstrap5-jquery-compat.js') }}"></script>
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
@@ -28,6 +36,21 @@
         
         <!-- sweet alert  -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+        <script src="{{ asset('assets/DataTables/datatables.min.js') }}"></script>
+        <script src="https://cdn.datatables.net/2.1.2/js/dataTables.bootstrap5.min.js"></script>
+        <script src="https://cdn.datatables.net/select/2.0.3/js/dataTables.select.js"></script>
+        <script src="https://cdn.datatables.net/select/2.0.3/js/select.bootstrap5.js"></script>
+        <script src="https://cdn.datatables.net/datetime/1.5.3/js/dataTables.dateTime.min.js"></script>
+        <script src="https://cdn.datatables.net/colreorder/2.0.3/js/dataTables.colReorder.js"></script>
+        <script src="https://cdn.datatables.net/colreorder/2.0.3/js/colReorder.bootstrap5.js"></script>
+        <script src="https://cdn.datatables.net/buttons/3.1.0/js/dataTables.buttons.js"></script>
+        <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.bootstrap5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/3.1.0/js/buttons.print.min.js"></script>
         
         @stack('custom-style')
 
@@ -63,7 +86,7 @@
         </style>
         <link rel="stylesheet" href="{{ asset('assets/css/take-test-root.css') }}?v={{ time() }}">
         <link rel="stylesheet" href="{{ asset('assets/css/take-test-style.css') }}?v={{ time() }}">
-        <link href="{{ asset('resources/css/responsive.css') }}" rel="stylesheet" media="screen">
+        <link href="{{ asset('resources/css/responsive.css') }}?v={{ filemtime(public_path('resources/css/responsive.css')) }}" rel="stylesheet" media="screen">
             @stack('sports-style')
     </head>
     @php
@@ -166,7 +189,7 @@
                             @endphp
 
                             <li class="nav-item dropdown">
-                                <a class="navbar-brand nav-link d-lg-block d-none" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <a class="navbar-brand nav-link d-lg-block d-none" data-bs-toggle="dropdown" href="#" aria-expanded="false">
                                     <i class="far fa-bell" style="font-size:20px; color: grey;"></i>
                                     @if($unreadCount > 0)
                                         <sup><span class="badge badge-warning navbar-badge">{{ $unreadCount }}</span></sup>
@@ -225,7 +248,7 @@
                             @else
                                 <li class="nav-item dropdown avtar">
                                     
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{-- route('filldart.dashboard') --}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{-- route('filldart.dashboard') --}}" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                         
                                         @if(auth()->guard('web')->check() && Auth::user()->profile_picture)
                                             <img src="{{ asset('assets/uploads/profilePictures/users/' .Auth::user()->profile_picture) }}" class="d-inline-block align-top" height="32" width="32" alt="avtar" style="border-radius: 50%;">

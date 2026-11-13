@@ -20,20 +20,20 @@
                     </a>
                 </div> -->
                 <div class="col-12 col-md-6">
-                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-toggle="modal" data-target=".upload-student-data">
+                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-bs-toggle="modal" data-bs-target=".upload-student-data">
                         <span>Upload Student Data</span>
                         <span class="play-mg"><img src="{{ asset('assets/imgs/video_i2.png') }}" alt=""></span>
                     </a>
                 </div>
                 <div class="col-12 col-md-6">
-                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-toggle="modal" data-target=".rectify-error-uploading-data">
+                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-bs-toggle="modal" data-bs-target=".rectify-error-uploading-data">
                         <span>How To Rectify Error While Uploading Data</span>
                         <span class="play-mg"><img src="{{ asset('assets/imgs/video_i2.png') }}" alt=""></span>
                     </a>
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-toggle="modal" data-target=".student-idcard">
+                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-bs-toggle="modal" data-bs-target=".student-idcard">
                         <span>Download Student ID Cards</span>
                         <span class="play-mg"><img src="{{ asset('assets/imgs/video_i2.png') }}" alt=""></span>
                     </a>
@@ -45,13 +45,13 @@
                     </a>
                 </div> -->
                 <div class="col-12 col-md-6">
-                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-toggle="modal" data-target=".registration-assessor">
+                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-bs-toggle="modal" data-bs-target=".registration-assessor">
                         <span>Registration of Assessor</span>
                         <span class="play-mg"><img src="{{ asset('assets/imgs/video_i2.png') }}" alt=""></span>
                     </a>
                 </div>
                 <div class="col-12 col-md-6">
-                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-toggle="modal" data-target=".manage-assessor">
+                    <a href="#a" class="d-flex w-100 justify-content-between align-items-center p-3 py-4 play-card mb-3" data-bs-toggle="modal" data-bs-target=".manage-assessor">
                         <span>Manage Assessor</span>
                         <span class="play-mg"><img src="{{ asset('assets/imgs/video_i2.png') }}" alt=""></span>
                     </a>
@@ -77,9 +77,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Upload Student Data</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <iframe src="https://www.youtube.com/embed/JyLCKxxQ680" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="aspect-ratio: 16/9;"></iframe>
@@ -93,9 +91,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">How To Rectify Error While Uploading Data</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <iframe src="https://www.youtube.com/embed/JyLCKxxQ680" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="aspect-ratio: 16/9;"></iframe>
@@ -109,9 +105,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Download Student ID Cards</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <iframe src="https://www.youtube.com/embed/JyLCKxxQ680" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="aspect-ratio: 16/9;"></iframe>
@@ -125,9 +119,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Registration of Assessor</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <iframe src="https://www.youtube.com/embed/JyLCKxxQ680" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="aspect-ratio: 16/9;"></iframe>
@@ -141,9 +133,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Manage Assessor</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <iframe src="https://www.youtube.com/embed/JyLCKxxQ680" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="aspect-ratio: 16/9;"></iframe>

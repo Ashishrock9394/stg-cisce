@@ -27,7 +27,7 @@
 @if(session('success'))
     <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
         {{ session('success') }}
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <button type="button" class="close btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 @endif
 
@@ -38,7 +38,7 @@
                 <li>{{ $error }}</li>
             @endforeach
         </ul>
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <button type="button" class="close btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 @endif
 
@@ -165,9 +165,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title" id="exampleModalLabel">Edit Super Admin</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
+				<button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 
             <form id="editSuperAdmin">
@@ -203,7 +201,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
                     <button type="submit" class="btn btn-primary"> Update </button>
                 </div>
 

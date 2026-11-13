@@ -435,20 +435,21 @@ label {
 
 /********* Login End *********/
 .back-button {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: transparent;
-    color: var(--navi-color);
     display: inline-flex;
-    padding: 0px;
-    border-radius: 6px;
-    border: 2px solid transparent;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    background-color: transparent;
+    color: var(--org-color);
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid var(--org-color);
     font-weight: 500;
-    margin: 12px 15px;
+    margin: 0 14px 0 0;
 }
 
 .back-button>span.arrow {
@@ -460,6 +461,9 @@ label {
 .back-button>span.arrow svg {
     width: 2rem;
     height: 2rem;
+    display: block;
+    color: inherit;
+    fill: currentColor;
 }
 
 .back-txt {
@@ -467,8 +471,8 @@ label {
 }
 
 .back-button:hover {
-    color: var(--navi-color);
-    border: 2px solid var(--navi-color);
+    color: var(--org-color);
+    border: 2px solid var(--org-color);
     text-decoration: none;
 }
 
@@ -618,6 +622,14 @@ label {
     color: #fff;
     border: 1px solid #434386;
 }
+
+.table.dataTable thead > tr > th,
+.table.dataTable thead > tr > td {
+    background-color: #434386;
+    color: #fff;
+    border-color: #434386;
+}
+
 /* .table th:last-child, .table td:last-child, .table tr:last-child td, tr:last-child td:last-child {
     border: 1px solid rgb(144 145 181 / 35%);
 } */
@@ -652,7 +664,17 @@ tr:nth-child(even) {
      margin-right: 10px; */
     border: none;
     width: auto !important;
+}
 
+.dt-container select:not(.select2-hidden-accessible) {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%236c757d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .5rem center;
+    background-size: 16px 12px;
+    padding-right: 1.75rem !important;
 }
 
 .dt-search input[type=search] {
@@ -743,16 +765,35 @@ tr:nth-child(even) {
 .bottom,
 .dt-paging>nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 5px 0px;
     gap: 6px;
 }
 
 .bottom {
+    justify-content: space-between;
     width: 100%;
     padding: 5px 10px;
+}
+
+.dt-paging>nav {
+    justify-content: flex-end;
+    width: auto;
+    padding: 0;
+}
+
+.dt-paging .pagination {
+    margin: 0;
+}
+
+.dt-paging .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 .45rem;
+    font-size: .875rem;
+    line-height: 1;
 }
 
 .dt-paging>nav button {
@@ -1348,11 +1389,11 @@ tbody {
     font-size: 1.25rem;
 }
 
-.modal button.close {
+.modal button.btn-close {
     border-radius: 100px;
-    background: #eff0f7;
-    width: 38px;
-    height: 38px;
+    background-color: #eff0f7;
+    width: 20px;
+    height: 20px;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -1360,6 +1401,8 @@ tbody {
     justify-content: center;
     align-items: center;
     opacity: 1;
+    background-position: center;
+    background-size: 1.25rem;
 }
 
 .modal button.close>span {

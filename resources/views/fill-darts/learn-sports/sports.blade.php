@@ -205,7 +205,7 @@
 
                      <div class="card">
                         <div class="card-header">
-                           <div class="btn btn-link" data-toggle="collapse" data-target="#{{$details['chapter_name']}}" aria-expanded="false" aria-controls="collapse">
+                           <div class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#{{$details['chapter_name']}}" aria-expanded="false" aria-controls="collapse">
                               <div class="row">
                                  <div class="col">
                                     {{ $key }}
@@ -249,8 +249,8 @@
                                     @foreach($details['chapterVideos'] as $video)
                                        <li class="col-12 col-md-6 col-lg-6 col-xl-4">
                                           <a href="javascript:void(0);"
-                                             data-toggle="modal"
-                                             data-target="#getTutorialVideos"
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#getTutorialVideos"
                                              onclick="getTutorialVideos({{ json_encode($video->topic) }}, {{ json_encode($video->video_url) }})">
                                              <span class="card">
                                                 <img class="card-img-left" src="{{ $video->thumbnail_url }}" alt="Card image cap">
@@ -284,9 +284,7 @@
 
             <div class="modal-header">
                 <h3 class="modal-title" id="model-title-id">Dynamic Heading</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal();">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeModal();"></button>
             </div>
 
             <div class="modal-body pt-0 pb-4 px-4 mt-3">

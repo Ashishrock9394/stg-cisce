@@ -31,8 +31,8 @@
 
 
 </style>
-<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.1/css/bootstrap5-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.1.1/js/bootstrap5-toggle.jquery.min.js"></script>
 
 
 <div class="container">
@@ -125,12 +125,12 @@
                                                         type="checkbox"
                                                         class="trainer-action-btn tr-action"
                                                         data-toggle="toggle"
-                                                        data-on="&nbsp;Active"
-                                                        data-off="&nbsp;Inactive"
+                                                        data-onlabel="&nbsp;Active"
+                                                        data-offlabel="&nbsp;Inactive"
                                                         data-onstyle="success"
                                                         data-offstyle="custom-off"
                                                         data-width="80"
-                                                        data-size="sm"
+                                                        data-size="small"
                                                         {{ $users->status == 'Active' ? 'checked' : '' }}
                                                         data-users-id="{{ $users->id }}"
                                                     >
@@ -182,9 +182,7 @@
       <div class="modal-header d-flex justify-content-center">
         <h5 class="modal-title">Edit School Admin details</h5>
         <!-- Proper close button -->
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         @include('school.admin.edit-school-admin')

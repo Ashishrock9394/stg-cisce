@@ -144,7 +144,7 @@
             <div style="color: #ffffff;">
                 <div class="d-flex"> 
 					@if (!session('is_impersonating'))                                      
-                    <a type="button" class="btn btn-primary text-light text-center custome-btn-i w-100 mr-2" data-toggle="modal" data-target="#uploadEmailModal">
+                    <a type="button" class="btn btn-primary text-light text-center custome-btn-i w-100 mr-2" data-bs-toggle="modal" data-bs-target="#uploadEmailModal">
                     	<i class="fa-solid fa-upload"></i>Upload
                     </a>  
 					@endif  
@@ -152,7 +152,7 @@
                     	<i class="fa-solid fa-download"></i>Download Template
                     </a> --}}    
 					@if($logs->isNotEmpty())
-                    <a type="button" class="btn btn-primary custome-btn-i w-100" data-toggle="modal" data-target="#emailHistoryModal">
+                    <a type="button" class="btn btn-primary custome-btn-i w-100" data-bs-toggle="modal" data-bs-target="#emailHistoryModal">
                         View History
                     </a>
 					@endif
@@ -192,9 +192,7 @@
         <div class="modal-content">            
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel1"><i class="fa fa-envelope-open-text mr-2"></i>Upload Parent's Email Template</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
 				<div class="alert alert-info d-flex align-items-start gap-2" role="alert" style="border-left: 4px solid #0d6efd;">

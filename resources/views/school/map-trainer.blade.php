@@ -83,9 +83,7 @@
         @if(session('success'))
         <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
         {{ session('success') }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="close btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         @endif
 
@@ -188,8 +186,6 @@
 
 </div>
 
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 

@@ -205,16 +205,16 @@
 					<div class="col-auto col-md-auto" style="color: #ffffff;">
 						<div class="d-flex">
 							@if (!session('is_impersonating'))
-							<a type="button" id="upload_btn" title="Upload Data" class="btn btn-primary custome-btn-i w-100 mr-3" data-toggle="modal" data-target="#uploadbulkdata"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16"> <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/></svg><span>Upload Data</span> </a>
+							<a type="button" id="upload_btn" title="Upload Data" class="btn btn-primary custome-btn-i w-100 mr-3" data-bs-toggle="modal" data-bs-target="#uploadbulkdata"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16"> <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/></svg><span>Upload Data</span> </a>
 
-							<a type="button" id="addstudent" title="Add Student" class="btn btn-primary custome-btn-i w-100  mr-3" data-toggle="modal" data-target="#studentRegistrationForm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg><span>Add Student</span></a>
+							<a type="button" id="addstudent" title="Add Student" class="btn btn-primary custome-btn-i w-100  mr-3" data-bs-toggle="modal" data-bs-target="#studentRegistrationForm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg><span>Add Student</span></a>
 
 							@endif
 							{{-- <a href="{{route ('students.promotion')}}" type="button" id="promoteStudents" title="Promote Students" class="btn btn-primary custome-btn-i w-100  mr-3"><i class="fa-solid fa-person-arrow-up-from-line"></i><span>Promote Classes</span></a> --}}
 							
 							@if($logs->isNotEmpty() || $promotionLog->isNotEmpty())
 							<a type="button" class="btn btn-primary custome-btn-i w-100" id="historyButton">
-							<!-- <a type="button" class="btn btn-primary custome-btn-i w-100" data-toggle="modal" data-target="#exampleModalCenter"> -->
+							<!-- <a type="button" class="btn btn-primary custome-btn-i w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"> -->
 							 View History
 							</a>
 							@endif
@@ -233,9 +233,7 @@
 		         
 		         <div class="modal-header">
 		            <h5 class="modal-title" id="exampleModalLabel1">Upload History</h5>
-		            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		            <span aria-hidden="true">&times;</span>
-		            </button>
+		            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		         </div>
 
 		        <div class="modal-body">
@@ -415,9 +413,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title">Confirm or Modify Parent's Email Id</h5>
-					<button type="button" class="close" data-dismiss="modal">
-						<span>&times;</span>
-					</button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 
 				<div class="modal-body">
@@ -479,7 +475,7 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
 						Close
 					</button>
 				</div>
@@ -495,9 +491,7 @@
       <div class="modal-content">
          <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel1">Upload Student Data</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="upload">         
 		 @include('school.bulkuploadform') 
@@ -515,9 +509,7 @@
 
 		<div class="modal-header">
 			<h5 class="modal-title">Edit Student</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
 
 		<div class="modal-body">
@@ -655,7 +647,7 @@
 			<div class="modal-footer d-flex justify-content-between align-items-center mt-3">
 				<span class="text-danger" id="ageSuggetion" style="opacity: 0.92;"></span>
 				<div>
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 					<button type="submit" class="btn btn-primary">Update</button>
 				</div>
 			</div>
@@ -675,9 +667,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title" id="exampleModalLabel">Add Student</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 
 			   
@@ -868,9 +858,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title" id="success_title"> Student Added Sucessfully </h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
 				<p>Securely store student login details for future access!</p>

@@ -390,6 +390,10 @@
     display: block;
   }
 
+  .dt-container .dt-paging .pagination li.page-item {
+    display: flex;
+  }
+
   .user-cred .nav-link.user-login,
   .user-cred .nav-link.user-register {
     margin: 6px 5px;
@@ -646,18 +650,18 @@
   }
 
   .back-button {
-    position: absolute;
-    top: 1px;
-    left: 15px;
+    position: static;
+    top: auto;
+    left: auto;
     color: var(--org-color);
     display: inline-flex;
-    padding: 5px;
-    border-radius: 100px;
+    padding: 0;
+    border-radius: 50%;
     border: 2px solid var(--org-color);
     font-weight: 500;
-    margin: 0;
+    margin: 0 14px 0 0;
     /* margin-bottom: 30px; */
-    z-index: 2;
+    z-index: auto;
   }
 
   .back-button > span.arrow {
